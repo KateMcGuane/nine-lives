@@ -27,6 +27,30 @@ Check letter validity.
 """
 def hangman():
     word = get_valid_word(words) # Variable stores valid letters
-    word_letters = set(word) # Creates a new set of letters from chosen word
+    word_letters = set(word) # Creates a new set of letters from word
     aplphabet = set(string.ascii_lowercase)
     guessed_letters = set() # What the user has guessed
+
+    # Getting user input
+    user_letter = input("Guess a letter: ").lower()
+
+    """
+    If this is a valid character in the alphabet not yet used,
+    add this to guessed_letters set.
+    If the letter guessed is in the word, remove that letter
+    from word_letters.
+    """
+
+    if user_letter in alphabet - guessed_letters:
+        guessed_letters.add(user_letter)
+        if user_letter in word_letters:
+            word_letters.remove(user_letter)
+
+    elif user_letter in guessed_letters: # Invalid guess; already tried
+        print("You have already used that letter. Please try again.")
+    else:
+        print("Invalid letter. Please try again.") # Invalid input
+
+
+user_input = input("Type something:")
+print(user_input)
