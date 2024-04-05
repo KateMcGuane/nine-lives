@@ -192,11 +192,12 @@ Please see [TESTING.md](TESTING.md) for a comprehensive list of tests performed.
   - CREDIT CODE & CREATOR.
   - CAN SPECIFY CERTAIN AREAS OF THE CODE THAT WERE USED.
   - I followed the format of the XXXXXX XXXXXX. This was to ensure best practice in creating my first interactive Front-End web application.
-
+  - [12 Beginner Python Projects - Coding Course](https://www.youtube.com/watch?v=8ext9G7xspg&t=5795s&ab_channel=freeCodeCamp.org) established the main logic for this project. I adapted the code to suit the needs of this project.
+  - [Hangman](https://github.com/kying18/hangman) the code was adapted from this source. The words.py file was copied & pasted directly.
 
   ###  Media
 
-  - YOUTUBE VIDEOS
+  - [12 Beginner Python Projects - Coding Course](https://www.youtube.com/watch?v=8ext9G7xspg&t=5795s&ab_channel=freeCodeCamp.org) by freeCodeCamp.org was used as an educational aid, assited in laying out the logic, and coding process.
 
 
   ###  Acknowledgments
