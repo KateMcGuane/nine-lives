@@ -91,9 +91,16 @@
 
    ### Language
 
-   - [Python](https://www.python.org/) - core language used.
+   - [Python](https://www.python.org/) was the core language used.
+
 
    ### Libraries
+
+   - [Python Library](https://docs.python.org/3/):
+      - [set class](https://docs.python.org/3/library/stdtypes.html#set) was used to ensure a selection of unique words.
+      - [string](https://docs.python.org/3/library/string.html#module-string) was used to concatenate input letters.
+      - [random.choices](https://docs.python.org/3/library/random.html#random.choice) was used to randomly choose a word from a list.
+
 
    ### Frameworks & Tools
 
