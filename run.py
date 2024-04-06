@@ -38,15 +38,15 @@ def gameplay():
 
         # Letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
-        print(f"You have {lives} left.\n")
-        print(f"You have used these letters: {' '.join(guessed_letters)}.\n")
+        print(f"\nYou have {lives} lives left.")
+        print(f"\nYou have used these letters: {' '.join(guessed_letters)}")
 
         # Current word is... (ie W - R D)
         # Displays guessed letters
         current_word_list = [letter if letter in guessed_letters else '-' for letter in word]
-        print(f"Current word: {' '.join(current_word_list)}.\n")
+        print(f"\nCurrent word: {' '.join(current_word_list)}")
 
-        user_letter = input("Guess a letter: ").lower()
+        user_letter = input("\nGuess a letter: ").lower()
         if user_letter in alphabet - guessed_letters:
             guessed_letters.add(user_letter)
             if user_letter in word_letters:
@@ -54,20 +54,20 @@ def gameplay():
                 word_letters.remove(user_letter)#
             else:
                 lives = lives - 1 # Takes away a life if wrong
-                print("That letter is not in the word.\n")
+                print("\nThat letter is not in the word.")
 
 
         elif user_letter in guessed_letters:
-            print("You have already used that letter. Please try again.\n")
+            print("\nYou have already used that letter. Please try again.")
 
         else:
-            print("Invalid letter. Please try again.\n")
+            print("\nInvalid letter. Please try again.")
 
     # While condition gets here when condition is met aka len(word_letters) == 0
     if lives == 0:
-        print(f"Sorry, you died! The word was {word}.\n")
+        print(f"\nSorry, you died! The word was {word}.")
     else:
-        print(f"Congratulations! You guessed the word, {word}!\n")
+        print(f"\nCongratulations! You guessed the word, {word}!")
 
 
 
@@ -84,9 +84,9 @@ def gameplay():
             word_letters.remove(user_letter)
 
     elif user_letter in guessed_letters: # Invalid guess; already tried
-        print("You have already used that letter. Please try again.\n")
+        print("\nYou have already used that letter. Please try again.")
     else:
-        print("Invalid letter. Please try again.\n") # Invalid input
+        print("\nInvalid letter. Please try again.") # Invalid input
 
 
 gameplay()
