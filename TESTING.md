@@ -76,7 +76,7 @@ I used Lighthouse in DevTools to confirm that the website is in the green for pe
 
   | # | Bug | How I solved the issue | Screenshots |
   | --- | --- | --- | --- |
-  | 1 | --- |  --- | --- |
+  | 1 | Testing print statement would not print values. | Reviewd the code & realised I left out the argument when calling the function. | n/a |
   | 2 | --- |  --- | --- |
   | 3 | --- |  --- | --- |
   | 4 | --- |  --- | --- |

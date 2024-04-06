@@ -25,7 +25,7 @@ def get_valid_word(words):
 Montior correctly guessed words.
 Check letter validity.
 """
-def hangman():
+def gameplay():
     word = get_valid_word(words) # Variable stores valid letters
     word_letters = set(word) # Creates a new set of letters from word
     aplphabet = set(string.ascii_lowercase)
@@ -33,6 +33,17 @@ def hangman():
 
     # Getting user input
     user_letter = input("Guess a letter: ").lower()
+    if user_letter in alphabet - guessed_letters:
+        guessed_letters.add(user_letter)
+        if user_letter in word_letters:
+            # word_letter decreases with each correct guess
+            word_letters.remove(user_letter)
+
+    elif user_letter in guessed_letters:
+        print("You have already used that letter. please try again.")
+
+    else:
+        print("Invalid letter. Please try again.")
 
     """
     If this is a valid character in the alphabet not yet used,

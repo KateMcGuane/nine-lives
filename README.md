@@ -113,6 +113,7 @@
    - [Heroku](https://www.heroku.com/) was used to deploy the application.
    - [Lucid Chart](https://www.lucidchart.com/pages/)
    - [Miro](https://miro.com/app/board/uXjVNiugb1U=/)
+   - [Replit](https://replit.com/) was used to try out variations of code.
    - [Visual Studio Code IDE](https://code.visualstudio.com/)
 
 
