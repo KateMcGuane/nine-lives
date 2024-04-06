@@ -79,8 +79,8 @@ I used Lighthouse in DevTools to confirm that the website is in the green for pe
   | 1 | Testing print statement would not print values. | Reviewd the code & realised I left out the argument when calling the function. | n/a |
   | 2 | Created infinte loop while creating gameplay(). Conditions not indented properly. | I indented the conditions, and the code ran as expected. | ![Infinite Loop](testing/nine_lives_infinite_loop.PNG) |
   | 3 | Spelling error when outlining if statement within while loop of gameplay(). |  The original variable spelling was incorrect, as opposed to the spelling of 'alphabet' in the if statement. | ![Spelling Error](testing/nine_lives_bug3.PNG) |
-  | 4 | --- |  --- | --- |
-  | 5 | --- |  --- | --- |
+  | 4 | f-string not working as expected. | Forgot to insert "f" before string. | ![f-string](testing/nine_lives_bug4.PNG) |
+  | 5 | if/else statement within gameplay() not working correctly. The game continues to play even after 9 guesses have been attempted. | Was corrected when bug #4 was also fixed. | ![Guesses](testing/nine_lives_bug5.PNG) |
   | 6 | --- |  --- | --- |
   | 7 | --- |  --- | --- |
   | 8 | --- |  --- | --- |
