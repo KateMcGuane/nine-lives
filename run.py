@@ -33,9 +33,14 @@ def gameplay():
 
     # Getting user input
     while len(word_letter) > 0: # Iterate over until conditions are met
+
         # Letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
         print(f"You have used these letters: {' '.join(guessed_letters)}")
+
+        # Current word is... (ie W - R D)
+        current_word_list = [letter if letter in guessed_letters else '-' for letter in word]
+        print(f"Current word: {' '.join(current_word_list)}")
 
     user_letter = input("Guess a letter: ").lower()
     if user_letter in alphabet - guessed_letters:
@@ -45,12 +50,12 @@ def gameplay():
             word_letters.remove(user_letter)
 
     elif user_letter in guessed_letters:
-        print("You have already used that letter. please try again.")
+        print("You have already used that letter. Please try again.")
 
     else:
         print("Invalid letter. Please try again.")
 
-    # Gets here when len(word_letters) == 0
+    # While condition gets here when condition is met aka len(word_letters) == 0
 
 
 
