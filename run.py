@@ -31,14 +31,18 @@ def gameplay():
     alphabet = set(string.ascii_lowercase)
     guessed_letters = set() # What the user has guessed
 
+    lives = 9
+
     # Getting user input
-    while len(word_letters) > 0: # Iterate over until conditions are met
+    while len(word_letters) > 0 and lives > 0: # Iterate over until conditions are met
 
         # Letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
+        print("You have {lives} left.\n")
         print(f"You have used these letters: {' '.join(guessed_letters)}")
 
         # Current word is... (ie W - R D)
+        # Displays guessed letters
         current_word_list = [letter if letter in guessed_letters else '-' for letter in word]
         print(f"Current word: {' '.join(current_word_list)}")
 
@@ -47,7 +51,11 @@ def gameplay():
             guessed_letters.add(user_letter)
             if user_letter in word_letters:
                 # word_letter decreases with each correct guess
-                word_letters.remove(user_letter)
+                word_letters.remove(user_letter)#
+            else:
+                lives = lives - 1 # Takes away a life if wrong
+                print("That letter is not in the word.")
+
 
         elif user_letter in guessed_letters:
             print("You have already used that letter. Please try again.")
@@ -55,7 +63,11 @@ def gameplay():
         else:
             print("Invalid letter. Please try again.")
 
-        # While condition gets here when condition is met aka len(word_letters) == 0
+    # While condition gets here when condition is met aka len(word_letters) == 0
+    if lives == 0:
+        print(f"Sorry, you died! The word was {word}.")
+    else:
+        print(f"Congratulations! You guessed the word, {word}!")
 
 
 
