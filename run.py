@@ -4,11 +4,12 @@
 import random # Want to be choose a word at random
 from words import words
 import string
+from pyfiglet import figlet_format
 
 
 """
-Credit: YouTube video used for main logic of game -
-https://www.youtube.com/watch?v=8ext9G7xspg&t=5795s&ab_channel=freeCodeCamp.org
+*GAME LOGIC*
+Credit: https://www.youtube.com/watch?v=8ext9G7xspg&t=5795s&ab_channel=freeCodeCamp.org
 """
 
 """
@@ -45,7 +46,7 @@ def gameplay():
         # Letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
         print(f"\nYou have {lives} lives left.")
-        print(f"\nYou have used these letters: {' '.join(guessed_letters)}")
+        print(f"\nYou have tried: {' '.join(guessed_letters)}")
 
         # Current word is... (ie W - R D)
         # Displays guessed letters
@@ -67,15 +68,13 @@ def gameplay():
             print("\nYou have already used that letter. Please try again.")
 
         else:
-            print("\nInvalid letter. Please try again.")
+            print("\nInvalid character. Please try again.")
 
     # While condition gets here when condition is met aka len(word_letters) == 0
     if lives == 0:
         print(f"\nSorry, you died! The word was {word}.")
     else:
         print(f"\nCongratulations! You guessed the word, {word}!")
-
-
 
     """
     If this is a valid character in the alphabet not yet used,
