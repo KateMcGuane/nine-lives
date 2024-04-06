@@ -97,9 +97,11 @@
    ### Libraries
 
    - [Python Library](https://docs.python.org/3/):
+      - [join method](https://docs.python.org/3/search.html?q=join%28%29) was used to turn an iterable into a string.
+      - [random.choices](https://docs.python.org/3/library/random.html#random.choice) was used to randomly choose a word from a list.
       - [set class](https://docs.python.org/3/library/stdtypes.html#set) was used to ensure a selection of unique words.
       - [string](https://docs.python.org/3/library/string.html#module-string) was used to concatenate input letters.
-      - [random.choices](https://docs.python.org/3/library/random.html#random.choice) was used to randomly choose a word from a list.
+
 
 
    ### Frameworks & Tools

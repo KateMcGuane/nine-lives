@@ -32,6 +32,11 @@ def gameplay():
     guessed_letters = set() # What the user has guessed
 
     # Getting user input
+    while len(word_letter) > 0: # Iterate over until conditions are met
+        # Letters used
+        # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
+        print(f"You have used these letters: {' '.join(guessed_letters)}")
+
     user_letter = input("Guess a letter: ").lower()
     if user_letter in alphabet - guessed_letters:
         guessed_letters.add(user_letter)
@@ -44,6 +49,10 @@ def gameplay():
 
     else:
         print("Invalid letter. Please try again.")
+
+    # Gets here when len(word_letters) == 0
+
+
 
     """
     If this is a valid character in the alphabet not yet used,
