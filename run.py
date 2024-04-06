@@ -28,11 +28,11 @@ Check letter validity.
 def gameplay():
     word = get_valid_word(words) # Variable stores valid letters
     word_letters = set(word) # Creates a new set of letters from word
-    aplphabet = set(string.ascii_lowercase)
+    alphabet = set(string.ascii_lowercase)
     guessed_letters = set() # What the user has guessed
 
     # Getting user input
-    while len(word_letter) > 0: # Iterate over until conditions are met
+    while len(word_letters) > 0: # Iterate over until conditions are met
 
         # Letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
@@ -42,20 +42,20 @@ def gameplay():
         current_word_list = [letter if letter in guessed_letters else '-' for letter in word]
         print(f"Current word: {' '.join(current_word_list)}")
 
-    user_letter = input("Guess a letter: ").lower()
-    if user_letter in alphabet - guessed_letters:
-        guessed_letters.add(user_letter)
-        if user_letter in word_letters:
-            # word_letter decreases with each correct guess
-            word_letters.remove(user_letter)
+        user_letter = input("Guess a letter: ").lower()
+        if user_letter in alphabet - guessed_letters:
+            guessed_letters.add(user_letter)
+            if user_letter in word_letters:
+                # word_letter decreases with each correct guess
+                word_letters.remove(user_letter)
 
-    elif user_letter in guessed_letters:
-        print("You have already used that letter. Please try again.")
+        elif user_letter in guessed_letters:
+            print("You have already used that letter. Please try again.")
 
-    else:
-        print("Invalid letter. Please try again.")
+        else:
+            print("Invalid letter. Please try again.")
 
-    # While condition gets here when condition is met aka len(word_letters) == 0
+        # While condition gets here when condition is met aka len(word_letters) == 0
 
 
 
@@ -77,5 +77,6 @@ def gameplay():
         print("Invalid letter. Please try again.") # Invalid input
 
 
+gameplay()
 user_input = input("Type something:")
 print(user_input)
