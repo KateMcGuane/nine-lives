@@ -5,6 +5,14 @@ import random # Want to be choose a word at random
 from words import words
 import string
 from pyfiglet import figlet_format
+from simple_term_menu import TerminalMenu
+
+
+"""
+*GAME INITIATION*
+"""
+def welcome_menu():
+
 
 
 """
