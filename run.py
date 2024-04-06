@@ -7,9 +7,15 @@ import string
 
 
 """
+Credit: YouTube video used for main logic of game -
+https://www.youtube.com/watch?v=8ext9G7xspg&t=5795s&ab_channel=freeCodeCamp.org
+"""
+
+"""
 Get computer to choose a random word.
 Check if word is valid for game use - no spaces or dashes.
 """
+
 def get_valid_word(words):
     word = random.choice(words) # Randomly chooses a word from the list
     """ Continues to iterate until no longer true. """
