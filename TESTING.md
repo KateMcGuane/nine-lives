@@ -16,9 +16,9 @@ The following screenshots shows some of the errors that showed when put through 
   | Before | After |
   | --- | --- |
   | ![Before 1 of 2](testing/nine_lives_linter_1.PNG) ![Before 2 of 2](testing/nine_lives_linter_2.PNG) |  ![After](testing/nine_lives_linter_clear.PNG) |
-  | --- | ---|
-  | The following is a remaining error, that can not be adjusted for now. This is further referenced in "Known Bugs" below. |
-  | ![Existing Error](testing/remaining_linter_error.PNG) |
+
+  - The following is a remaining error, that can not be adjusted for now. This is further referenced in "Known Bugs" below.
+  ![Existing Error](testing/remaining_linter_error.PNG)
 
 
 
