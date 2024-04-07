@@ -1,9 +1,3 @@
-![PYTHON TEMPLATE LOGO/IMAGE](link_to_file_in_these_brackets_if_applicable)
-
-
----
-
-
 # *Nine Lives*
 
 "Nine Lives" is a classic word-guessing game that puts players' vocabulary and deduction skills to the test. Much like its counterpart, Hangman, players attempt to guess a hidden word by suggesting letters one at a time. However, in "Nine Lives," the stakes are higher as players are granted a limited number of incorrect guesses, represented by the titular nine lives. With each incorrect guess, a life is lost, bringing them one step closer to failure. The challenge lies in strategically selecting letters to unveil the mystery word before all nine lives are depleted. "Nine Lives" offers a thrilling and engaging experience, combining elements of wordplay and suspense to keep players on the edge of their seats until the very end.
@@ -17,7 +11,7 @@
 
 ## User Experience
 
-   ### How to Play 
+   ### How to Play
 
     1. Describe the basic premise of the game. Link to Wikipedia with more detail.
     2. Distinguish any differences in this game and others.
@@ -55,10 +49,6 @@
     I used _____ to plan the logic of my applicaiton.
     ![Flowchart](link_to_flowchart_documentation_here)
 
-
-   ### Additional Features
-
-    ADD ANY EXTRAS, SPECIFIC TO THIS REPOSITORY.
 
 ---
 

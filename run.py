@@ -47,8 +47,7 @@ def gameplay():
 
         # Current word is... (ie W - R D)
         # Displays guessed letters
-        current_word_list =
-        [letter if letter in guessed_letters else '-' for letter in word]
+        current_word_list = [letter if letter in guessed_letters else '-' for letter in word]
         print(f"\nCurrent word: {' '.join(current_word_list)}")
 
         user_letter = input("\nGuess a letter: ").lower()
