@@ -1,8 +1,7 @@
 # PROJECT_NAME - Testing
 
 
-Visit the deployed site [PROJECT_NAME](insert_webpage_link_here) for reference.
-
+Visit the deployed site: [Nine Lives](https://nine-lives-68c816aea862.herokuapp.com/).
 
 ---
 
@@ -38,7 +37,13 @@ The website was tested on three different browsers: Brave, Chrome, & Microsoft E
 
 ### PEP8 Python Validator
 [PEP8 Python Validator](https://pep8ci.herokuapp.com/) was used to test this project.
-![NAME_OF_FILE](filepath_to_screenshot/documentation)
+
+The following screenshots shows some of the errors that showed when put through the CI Python Linter. All were corrected before the finally returning clear of any issues.
+
+  | Before | After |
+  | --- | --- |
+  | ![Before 1 of 2](testing/nine_lives_linter_1.PNG) ![Before 2 of 2](testing/nine_lives_linter_2.PNG) |  ![After](testing/nine_lives_linter_clear.PNG) |
+
 
 
 ---
@@ -49,7 +54,7 @@ The website was tested on three different browsers: Brave, Chrome, & Microsoft E
 
 I used Lighthouse in DevTools to confirm that the website is in the green for performance, accessibility, best practices & SEO for Desktop.
 
-![Desktop Results](filepath_to_screenshot/documentation)
+![Desktop Results](testing/nine_lives_lighthouse_report.PNG)
 
 
 ---
@@ -81,23 +86,6 @@ I used Lighthouse in DevTools to confirm that the website is in the green for pe
   | 3 | Spelling error when outlining if statement within while loop of gameplay(). |  The original variable spelling was incorrect, as opposed to the spelling of 'alphabet' in the if statement. | ![Spelling Error](testing/nine_lives_bug3.PNG) |
   | 4 | f-string not working as expected. | Forgot to insert "f" before string. | ![f-string](testing/nine_lives_bug4.PNG) |
   | 5 | if/else statement within gameplay() not working correctly. The game continues to play even after 9 guesses have been attempted. | Was corrected when bug #4 was also fixed. | ![Guesses](testing/nine_lives_bug5.PNG) |
-  | 6 | --- |  --- | --- |
-  | 7 | --- |  --- | --- |
-  | 8 | --- |  --- | --- |
-  | 9 | --- |  --- | --- |
-  | 10 | --- |  --- | --- |
-  | 11 | --- |  --- | --- |
-  | 12 | --- |  --- | --- |
-  | 13 | --- |  --- | --- |
-  | 14 | --- |  --- | --- |
-  | 15 | --- |  --- | --- |
-  | 16 | --- |  --- | --- |
-  | 17 | --- |  --- | --- |
-  | 18 | --- |  --- | --- |
-  | 19 | --- |  --- | --- |
-  | 20 | --- |  --- | --- |
-
-
 
   - Once all of the solutions were carried out, I reviewed each issue to ensure all corrections were applied & no further issues were occurring.
 

@@ -1,55 +1,44 @@
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-
-import random # Want to be choose a word at random
+import random  # Want to be choose a word at random
 from words import words
 import string
-from pyfiglet import figlet_format
-from simple_term_menu import TerminalMenu
-
-
-"""
-*GAME INITIATION*
-"""
-def welcome_menu():
-
 
 
 """
 *GAME LOGIC*
-Credit: https://www.youtube.com/watch?v=8ext9G7xspg&t=5795s&ab_channel=freeCodeCamp.org
-"""
+Credit:
+https://www.youtube.com/watch?v=8ext9G7xspg&t=5795s&ab_channel=freeCodeCamp.org
 
-"""
 Get computer to choose a random word.
 Check if word is valid for game use - no spaces or dashes.
 """
 
+
 def get_valid_word(words):
-    word = random.choice(words) # Randomly chooses a word from the list
+    word = random.choice(words)  # Randomly chooses a word from the list
     """ Continues to iterate until no longer true. """
     while '-' in word or ' ' in word:
         word = random.choice(words)
 
-    return word.lower() # Limit user input to lowercase
-
-# print(get_valid_word(words))
+    return word.lower()  # Limit user input to lowercase
 
 
 """
 Montior correctly guessed words.
 Check letter validity.
 """
+
+
 def gameplay():
-    word = get_valid_word(words) # Variable stores valid letters
-    word_letters = set(word) # Creates a new set of letters from word
+    word = get_valid_word(words)  # Variable stores valid letters
+    word_letters = set(word)  # Creates a new set of letters from word
     alphabet = set(string.ascii_lowercase)
-    guessed_letters = set() # What the user has guessed
+    guessed_letters = set()  # What the user has guessed
 
     lives = 9
 
     # Getting user input
-    while len(word_letters) > 0 and lives > 0: # Iterate over until conditions are met
+    # Iterate over until conditions are met
+    while len(word_letters) > 0 and lives > 0:
 
         # Letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
@@ -58,7 +47,8 @@ def gameplay():
 
         # Current word is... (ie W - R D)
         # Displays guessed letters
-        current_word_list = [letter if letter in guessed_letters else '-' for letter in word]
+        current_word_list =
+        [letter if letter in guessed_letters else '-' for letter in word]
         print(f"\nCurrent word: {' '.join(current_word_list)}")
 
         user_letter = input("\nGuess a letter: ").lower()
@@ -66,11 +56,10 @@ def gameplay():
             guessed_letters.add(user_letter)
             if user_letter in word_letters:
                 # word_letter decreases with each correct guess
-                word_letters.remove(user_letter)#
+                word_letters.remove(user_letter)
             else:
-                lives = lives - 1 # Takes away a life if wrong
+                lives = lives - 1  # Takes away a life if wrong
                 print("\nThat letter is not in the word.")
-
 
         elif user_letter in guessed_letters:
             print("\nYou have already used that letter. Please try again.")
@@ -78,7 +67,7 @@ def gameplay():
         else:
             print("\nInvalid character. Please try again.")
 
-    # While condition gets here when condition is met aka len(word_letters) == 0
+    # While condition gets here when condition is met -- len(word_letters) == 0
     if lives == 0:
         print(f"\nSorry, you died! The word was {word}.")
     else:
@@ -96,10 +85,10 @@ def gameplay():
         if user_letter in word_letters:
             word_letters.remove(user_letter)
 
-    elif user_letter in guessed_letters: # Invalid guess; already tried
+    elif user_letter in guessed_letters:  # Invalid guess; already tried
         print("\nYou have already used that letter. Please try again.")
     else:
-        print("\nInvalid letter. Please try again.") # Invalid input
+        print("\nInvalid letter. Please try again.")  # Invalid input
 
 
 gameplay()
