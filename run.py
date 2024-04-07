@@ -92,5 +92,5 @@ def gameplay():
 
 
 gameplay()
-user_input = input("Type something:")
+user_input = input("Type something: \n")
 print(user_input)
