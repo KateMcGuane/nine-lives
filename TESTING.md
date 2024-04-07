@@ -5,44 +5,20 @@ Visit the deployed site: [Nine Lives](https://nine-lives-68c816aea862.herokuapp.
 
 ---
 
-## Compatability
-
-INSERT RELEVENT TESTING FOR WEBSITES MANUALLY TESTED. OTHERS YOU MAY WANT TO INCLUDE ARE: Mozilla Firefox, Safari, Opera.
-
-The website was tested on three different browsers: Brave, Chrome, & Microsoft Edge. It was compatable across all three.
-
-
-| Browser Compatability | Brave | Chrome | Microsoft Edge |
-| --- | --- | --- | --- |
-| Rendering | INSERT_RESULT | INSERT_RESULT | INSERT_RESULT |
-| Input Functionality| INSERT_RESULT | INSERT_RESULT | INSERT_RESULT |
-| Output Functionality | INSERT_RESULT | INSERT_RESULT | INSERT_RESULT |
-
-  ### Brave
-  ![Brave](filepath_to_screenshot)
-
-
-  ### Chrome
-  ![Chrome](filepath_to_screenshot/)
-
-
-  ### Microsoft Edge
-  ![Microsoft Edge](filepath_to_screenshot)
-
-
----
-
 
 ## Validator Testing
 
 ### PEP8 Python Validator
 [PEP8 Python Validator](https://pep8ci.herokuapp.com/) was used to test this project.
 
-The following screenshots shows some of the errors that showed when put through the CI Python Linter. All were corrected before the finally returning clear of any issues.
+The following screenshots shows some of the errors that showed when put through the CI Python Linter.
 
   | Before | After |
   | --- | --- |
   | ![Before 1 of 2](testing/nine_lives_linter_1.PNG) ![Before 2 of 2](testing/nine_lives_linter_2.PNG) |  ![After](testing/nine_lives_linter_clear.PNG) |
+  | --- |
+  | The following is a remaining error, that can not be adjusted for now. This is further referenced in "Known Bugs" below. |
+  | ![Existing Error](testing/remaining_linter_error.PNG)
 
 
 
@@ -59,18 +35,22 @@ I used Lighthouse in DevTools to confirm that the website is in the green for pe
 
 ---
 
-## Game Features
+## Gameplay
 
-| Feature | Action | Expected Result | Tested | Passed | Comments |
-| --- | --- | --- | --- | --- | --- |
-
-
-   ### User Stories
-   IF APPLICABLE
-  | # | User Story | Implementation | Screenshots |
-  | --- | --- | --- | --- |
-  | 1 | --- |  --- | --- |
-
+| Feature | Action | Expected Result | Tested | Comments |
+| --- | --- | --- | --- | --- |
+| Welcome prompt | Enter any key | Moves onto next command for user input | Pass | Adjust text & add design in later editions |
+| Enter any key | Creates next sequence of prompts | - Displays how many lives left the user has <br> - A list of letters already guesssed <br> - What letters have been guessed correctly <br> - User input for the letter the user wants to guess | Pass | Adjust text & add design in later editions |
+| Guess a letter | Enter any letter | A letter is accepted, regardless of casing, as all letters are converted to lowercase upon input | Pass | n/a |
+| Guess a letter | Enter number | Let's user know it is an invalid data type & to try again | Pass | --- |
+| Guess a letter | Enter any other keyboard character that's not a requested input type | Let's user know it is an invalid data type & to try again | Pass | --- |
+| Lives remaining | User guesses incorrect letter | - A life is deducted <br> - Letters used has been updated so the user does not make the same mistake again <br> - The word to be guessed remains blank | Pass | Edit messages to the user |
+| Lives remaining | User guesses a correct letter | - All lives before guess remain intact <br> - Letters used has been updated so the user does not use the same letter again <br> - The word to be guessed is updated with the correctly guessed letter | Pass | Edit messages to the user |
+| Letters tried | User inputs letter guess - the letter is correct | - Letters used has been updated so the user does not use the same letter again <br> - The word to be guessed is updated with the correctly guessed letter | Pass | --- |
+| Letters tried | User inputs letter guess - the letter is incorrect | - Letters used has been updated so the user does not make the same mistake again <br> - The word to be guessed remains blank | Pass | --- |
+| Current Word | Letter guessed is correct | Guessed letter is filled into current word to be guessed | Pass| Edit wording of this section shown to user |
+| Current Word | Letter guessed is incorrect | - Guessed letter section remains blank <br> - A life is deducted | Pass | Edit wording of this section shown to user |
+| Guessed Letter | Accepts data input | - Valid data accepted & other data is updated accordingly <br> - Invalid data not accepted & message relayed to user | Pass | --- |
 
 ---
 

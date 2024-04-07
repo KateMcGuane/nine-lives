@@ -9,57 +9,11 @@
 ---
 
 
-## User Experience
-
-   ### How to Play
-
-    1. Describe the basic premise of the game. Link to Wikipedia with more detail.
-    2. Distinguish any differences in this game and others.
-    3. Give a clear organised list of instructions. This may be separate from the previous two points.
-
-   ### User Story (OPTIONAL)
-
-   #### External user’s goal:(OPTIONAL)
-
-    - Goal 1
-    - Goal 2
-    - Goal None: You may have 1 or none.
-
-   #### Site owner's goal:(OPTIONAL)
-
-    - Goal 1
-    - Goal 2
-    - Goal None: You may have 1 or none.
-
-
----
-
-
-## Design
-
-   ### Flow Chart
-
-    DELETE ANYTHING NOT APPLICABLE TO THIS PROJECT.
-    There are some nice schema applications you can use for planning your project:
-    - [Miro](https://miro.com/app/board/uXjVNiugb1U=/)
-    - [Lucidchart](https://www.lucidchart.com/pages)
-
-    I used _____ to illustrate some of the main logical points before I began to code.
-    ![Flowchart](link_to_flowchart_documentation_here)
-    I used _____ to plan the logic of my applicaiton.
-    ![Flowchart](link_to_flowchart_documentation_here)
-
-
----
-
-
 ## Features
 
+See Gameplay in [TESTING.md](TESTING.md) for some of the current features.
 
-| Feature | Existing Features | Future Implementations | Screenshots |
-| --- | --- | --- | --- |
 
-### Gameplay
 ---
 
 
@@ -85,12 +39,9 @@
 
     DELETE ANYTHING NOT APPLICABLE TO THIS PROJECT.
    - [ChatGPT](https://chat.openai.com/)
-   - [Ezgif.com](https://ezgif.com/maker)
    - [GitHub](https://github.com/) was used to create & store my repository.
    - [Gitpod](https://www.gitpod.io/) was used as my IDE workspace.
    - [Heroku](https://www.heroku.com/) was used to deploy the application.
-   - [Lucid Chart](https://www.lucidchart.com/pages/)
-   - [Miro](https://miro.com/app/board/uXjVNiugb1U=/)
    - [Replit](https://replit.com/) was used to experiment with variations of code.
 
 
