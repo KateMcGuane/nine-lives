@@ -90,6 +90,6 @@ def gameplay():
         print("\nInvalid letter. Please try again.")  # Invalid input
 
 
-gameplay()
 user_input = input("Type something: \n")
 print(user_input)
+gameplay()
