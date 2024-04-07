@@ -1,4 +1,4 @@
-# PROJECT_NAME - Testing
+# Nine Lives - Testing
 
 
 Visit the deployed site: [Nine Lives](https://nine-lives-68c816aea862.herokuapp.com/).
@@ -16,9 +16,9 @@ The following screenshots shows some of the errors that showed when put through 
   | Before | After |
   | --- | --- |
   | ![Before 1 of 2](testing/nine_lives_linter_1.PNG) ![Before 2 of 2](testing/nine_lives_linter_2.PNG) |  ![After](testing/nine_lives_linter_clear.PNG) |
-  | --- |
+
   | The following is a remaining error, that can not be adjusted for now. This is further referenced in "Known Bugs" below. |
-  | ![Existing Error](testing/remaining_linter_error.PNG)
+  | ![Existing Error](testing/remaining_linter_error.PNG) |
 
 
 
@@ -61,12 +61,12 @@ I used Lighthouse in DevTools to confirm that the website is in the green for pe
 
   | # | Bug | How I solved the issue | Screenshots |
   | --- | --- | --- | --- |
-  | 1 | Testing print statement would not print values. | Reviewd the code & realised I left out the argument when calling the function. | n/a |
+  | 1 | Testing print statement would not print values. | Reviewed the code & realised I left out the argument when calling the function. | n/a |
   | 2 | Created infinte loop while creating gameplay(). Conditions not indented properly. | I indented the conditions, and the code ran as expected. | ![Infinite Loop](testing/nine_lives_infinite_loop.PNG) |
   | 3 | Spelling error when outlining if statement within while loop of gameplay(). |  The original variable spelling was incorrect, as opposed to the spelling of 'alphabet' in the if statement. | ![Spelling Error](testing/nine_lives_bug3.PNG) |
   | 4 | f-string not working as expected. | Forgot to insert "f" before string. | ![f-string](testing/nine_lives_bug4.PNG) |
   | 5 | if/else statement within gameplay() not working correctly. The game continues to play even after 9 guesses have been attempted. | Was corrected when bug #4 was also fixed. | ![Guesses](testing/nine_lives_bug5.PNG) |
-  | 6 | I had adjusted the spacing in run.py on line 50 for the variable current_word_list to comply with the linter. However, the program would not run correctly otherwise & I did not have time to come up with an alternative. Instead, I returned it to the way it was before. | ![Syntax Error](testing/syntax_error.PNG)
+
 
   - Once all of the solutions were carried out, I reviewed each issue to ensure all corrections were applied & no further issues were occurring.
 
@@ -74,4 +74,4 @@ I used Lighthouse in DevTools to confirm that the website is in the green for pe
 
   | # | Bug | Screenshots |
   | --- | --- | --- |
-  | 6 | I had adjusted the spacing in run.py on line 50 for the variable current_word_list to comply with the linter. However, the program would not run correctly otherwise & I did not have time to come up with an alternative. Instead, I returned it to the way it was before. | ![Syntax Error](testing/syntax_error.PNG)
+  | 1 | I had adjusted the spacing in run.py on line 50 for the variable current_word_list to comply with the linter. However, the program would not run correctly otherwise & I did not have time to come up with an alternative. Instead, I returned it to the way it was before. | ![Syntax Error](testing/syntax_error.PNG)

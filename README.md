@@ -37,7 +37,6 @@ See Gameplay in [TESTING.md](TESTING.md) for some of the current features.
 
    ### Frameworks & Tools
 
-    DELETE ANYTHING NOT APPLICABLE TO THIS PROJECT.
    - [ChatGPT](https://chat.openai.com/)
    - [GitHub](https://github.com/) was used to create & store my repository.
    - [Gitpod](https://www.gitpod.io/) was used as my IDE workspace.
@@ -108,9 +107,9 @@ Please see [TESTING.md](TESTING.md) for a comprehensive list of tests performed.
 
   ### Markup
 
-    The markup outline for this project was taken from the following README files:
-    - [Kate McGuane / hobby](https://github.com/KateMcGuane/hobby).
-    - [PedroCristo / portfolio_project_3](https://github.com/PedroCristo/portfolio_project_3/blob/main/README.md).
+  The markup outline for this project was taken from the following README files:
+  - [Kate McGuane / hobby](https://github.com/KateMcGuane/hobby).
+  - [PedroCristo / portfolio_project_3](https://github.com/PedroCristo/portfolio_project_3/blob/main/README.md).
 
 
   ### Content
