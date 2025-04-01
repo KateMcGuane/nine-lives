@@ -134,3 +134,7 @@ Please see [TESTING.md](TESTING.md) for a comprehensive list of tests performed.
   - Thank you to my mentor, cohort leader & CI team for your support and understanding during this project.
   - To Sarah, thank you for all the 1:1 zoom calls.
   - To Mikhail, thank you for your continued support.
+
+  ---
+  
+  Developed by Kate McGuane for Code Institute Portfolio Project 3: Python Essentials, 2024
